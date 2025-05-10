@@ -5,7 +5,7 @@ export { default as Employee } from './Employee';
 export { default as Editor } from './Editor';
 export { default as Customer } from './Customer';
 export { default as ColorPicker } from './ColorPicker';
-export { default as Calendar } from './Calendar';
+export { default as Calender } from './Calender';
 export { default as Area } from './charts/Area';
 export { default as Bar } from './charts/Bar';
 export { default as ColorMapping } from './charts/ColorMapping';

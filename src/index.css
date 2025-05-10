@@ -26,14 +26,14 @@ body {
   /* background-color: var(--main-dark-bg); */
 }
 
-button {
+/* button {
   background-color: var(--main-dark-bg);
   color: var(--light-gray);
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: var(--secondary-dark-bg);
-}
+} */
 .dark .sidebar {
   background-color: var(--secondary-dark-bg);
   color: var(--light-gray)

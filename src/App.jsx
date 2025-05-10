@@ -1,42 +1,36 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { FiSettings } from "react-icons/fi";
 import { registerLicense } from "@syncfusion/ej2-base";
+import {
+  Area,
+  Bar,
+  Calender,
+  ColorMapping,
+  ColorPicker,
+  Customer,
+  Ecommerce,
+  Editor,
+  Employee,
+  Financial,
+  Kanban,
+  Line,
+  Orders,
+  Pie,
+  Pyramid,
+  Stacked,
+} from "./pages/index";
+
+import { Navbar, Footer, ThemeSettings, Sidebar } from "./components/index";
+import { useStateContext } from "./context/ContextProvider";
 
 function App() {
   registerLicense(
     "Ngo9BigBOggjHTQxAR8/V1NNaF5cXmBCe0x3QHxbf1x1ZFNMYlRbQXdPMyBoS35Rc0VmWXdednZdQ2FYV0ZzVEBU"
   );
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(true);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => {
-      const newMode = !prevMode;
-      if (newMode) {
-        localStorage.setItem("theme", "dark");
-        document.documentElement.classList.add("dark");
-      } else {
-        localStorage.setItem("theme", "light");
-        document.documentElement.classList.remove("dark");
-      }
-      return newMode;
-    });
-  };
+  const { activeMenu } = useStateContext();
 
   return (
     <div className="">
@@ -48,25 +42,58 @@ function App() {
                 className="text-3xl p-3 hover:drop-shadow-xl hover:bg-gray-300 text-white cursor-pointer"
                 type="button"
                 style={{ background: "blue", borderRadius: "50%" }}
-                onClick={toggleDarkMode}
               >
                 <FiSettings />
               </button>
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fixed bg-white p-4">Sidebar</div>
+            <div className="w-72 fixed bg-white shadow-lg p-4">
+              <Sidebar />
+            </div>
           ) : (
-            <div className="w-0">Sidenar</div>
+            <div className="w-0 hidden">Sidebar</div>
           )}
         </div>
 
-        <div className={`bg-white min-h-screen w- ${activeMenu ? 'md:ml-72' : 'flex-2'}`}>
+        <div
+          className={`bg-white min-h-screen w- ${
+            activeMenu ? "md:ml-72" : "flex-2"
+          }`}
+        >
           <div className={`fixed md:static bg-white w-full navbar text-black`}>
-            Navbar
+            <Navbar />
+          </div>
+          <div className="">
+            <Routes>
+              {/* Dashboard */}
+              <Route path="/" element={<Ecommerce />} />
+              <Route path="/ecommerce" element={<Ecommerce />} />
+
+              {/* Pages */}
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/employees" element={<Employee />} />
+              <Route path="/customers" element={<Customer />} />
+
+              {/* Apps */}
+
+              <Route path="/kanban" element={<Kanban />} />
+              <Route path="/editor" element={<Editor />} />
+              <Route path="/calendar" element={<Calender />} />
+              <Route path="/color-picker" element={<ColorPicker />} />
+
+              {/* Charts */}
+              <Route path="/line" element={<Line />} />
+              <Route path="/area" element={<Area />} />
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/financial" element={<Financial />} />
+              <Route path="/color-mapping" element={<ColorMapping />} />
+              <Route path="/pyramid" element={<Pyramid />} />
+              <Route path="/stacked" element={<Stacked />} />
+            </Routes>
           </div>
         </div>
-        
       </BrowserRouter>
     </div>
   );
