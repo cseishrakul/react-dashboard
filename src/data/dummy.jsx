@@ -24,9 +24,9 @@ import product7 from './product7.jpg';
 import product8 from './product8.jpg';
 
 export const gridOrderImage = (props) => (
-  <div>
+  <div className="flex justify-center items-center my-2">
     <img
-      className="rounded-xl h-20 md:ml-3"
+      className="rounded-xl h-16 w-16 object-cover"
       src={props.ProductImage}
       alt="order-item"
     />
@@ -34,14 +34,16 @@ export const gridOrderImage = (props) => (
 );
 
 export const gridOrderStatus = (props) => (
-  <button
-    type="button"
-    style={{ background: props.StatusBg }}
-    className="text-white py-1 px-2 capitalize rounded-2xl text-md"
-  >
-    {props.Status}
-  </button>
+  <div className="flex justify-center">
+    <span
+      style={{ backgroundColor: props.StatusBg }}
+      className="text-white px-4 py-1 rounded-full text-sm font-medium capitalize"
+    >
+      {props.Status}
+    </span>
+  </div>
 );
+
 
 export const kanbanGrid = [
   { headerText: 'To Do',

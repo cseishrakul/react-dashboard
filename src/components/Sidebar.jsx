@@ -8,6 +8,12 @@ import { useStateContext } from "../context/ContextProvider";
 
 const Sidebar = () => {
   const {activeMenu,setActiveMenu} = useStateContext();
+  const handleCloseSidebar = () => {
+    if (activeMenu && screenSize <= 900) {
+      setActiveMenu(false);
+    }
+  };
+
 
   const activeLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white bg-blue-500 text-md m-2";
@@ -22,7 +28,7 @@ const Sidebar = () => {
           <div className="flex justify-between items-center">
             <Link
               to="/"
-              onClick={() => {setActiveMenu(false)}}
+              onClick={() => {handleCloseSidebar}}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-bold tracking-tight text-slate-900"
             >
               <SiShopware />

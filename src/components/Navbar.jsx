@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useStateContext } from "../context/ContextProvider";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -27,7 +27,13 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu,isClicked,setIsClicked } = useStateContext();
+  const { activeMenu, setActiveMenu,isClicked,setIsClicked,handleClick,screenSize, setScreenSize } = useStateContext();
+  useEffect(() => {const handleResize = () => setScreenSize(window.innerWidth);window.addEventListener("resize", handleResize); handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(()=>{if(screenSize <=900){setActiveMenu(false);}else{setActiveMenu(true);}  },[screenSize])
+
   return (
     <div className="flex justify-between p-2 md:mx-6 pt-5 relative">
       <NavButton
