@@ -27,7 +27,7 @@ import { useStateContext } from "./context/ContextProvider";
 
 function App() {
   registerLicense(
-    "Ngo9BigBOggjHTQxAR8/V1NNaF5cXmBCe0x3QHxbf1x1ZFNMYlRbQXdPMyBoS35Rc0VmWXdednZdQ2FYV0ZzVEBU"
+    "ORg4AjUWIQA/Gnt2XFhhQlJHfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTH5WdENiXXtadH1TRmheWkZ/"
   );
 
   const { activeMenu } = useStateContext();

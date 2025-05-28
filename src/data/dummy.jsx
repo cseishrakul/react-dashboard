@@ -2851,8 +2851,8 @@ export const scheduleData = [
     Id: 1,
     Subject: 'Explosion of Betelgeuse Star',
     Location: 'Space Center USA',
-    StartTime: '2021-01-10T04:00:00.000Z',
-    EndTime: '2021-01-10T05:30:00.000Z',
+    StartTime: '2025-01-10T04:00:00.000Z',
+    EndTime: '2026-01-10T05:30:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
@@ -2860,7 +2860,7 @@ export const scheduleData = [
     Subject: 'Thule Air Crash Report',
     Location: 'Newyork City',
     StartTime: '2021-01-11T06:30:00.000Z',
-    EndTime: '2021-01-11T08:30:00.000Z',
+    EndTime: '2026-01-11T08:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
@@ -2868,7 +2868,7 @@ export const scheduleData = [
     Subject: 'Blue Moon Eclipse',
     Location: 'Space Center USA',
     StartTime: '2021-01-12T04:00:00.000Z',
-    EndTime: '2021-01-12T05:30:00.000Z',
+    EndTime: '2026-01-12T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
@@ -2876,7 +2876,7 @@ export const scheduleData = [
     Subject: 'Meteor Showers in 2021',
     Location: 'Space Center USA',
     StartTime: '2021-01-13T07:30:00.000Z',
-    EndTime: '2021-01-13T09:00:00.000Z',
+    EndTime: '2026-01-13T09:00:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
@@ -2884,7 +2884,7 @@ export const scheduleData = [
     Subject: 'Milky Way as Melting pot',
     Location: 'Space Center USA',
     StartTime: '2021-01-14T06:30:00.000Z',
-    EndTime: '2021-01-14T08:30:00.000Z',
+    EndTime: '2026-01-14T08:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
@@ -2892,7 +2892,7 @@ export const scheduleData = [
     Subject: 'Mysteries of Bermuda Triangle',
     Location: 'Bermuda',
     StartTime: '2021-01-14T04:00:00.000Z',
-    EndTime: '2021-01-14T05:30:00.000Z',
+    EndTime: '2026-01-14T05:30:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
@@ -2900,7 +2900,7 @@ export const scheduleData = [
     Subject: 'Glaciers and Snowflakes',
     Location: 'Himalayas',
     StartTime: '2021-01-15T05:30:00.000Z',
-    EndTime: '2021-01-15T07:00:00.000Z',
+    EndTime: '2026-01-15T07:00:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
@@ -2908,7 +2908,7 @@ export const scheduleData = [
     Subject: 'Life on Mars',
     Location: 'Space Center USA',
     StartTime: '2021-01-16T03:30:00.000Z',
-    EndTime: '2021-01-16T04:30:00.000Z',
+    EndTime: '2026-01-16T04:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
@@ -2916,7 +2916,7 @@ export const scheduleData = [
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
     StartTime: '2021-01-18T05:30:00.000Z',
-    EndTime: '2021-01-18T07:30:00.000Z',
+    EndTime: '2026-01-18T07:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
@@ -2924,7 +2924,7 @@ export const scheduleData = [
     Subject: 'Wildlife Galleries',
     Location: 'Africa',
     StartTime: '2021-01-20T05:30:00.000Z',
-    EndTime: '2021-01-20T07:30:00.000Z',
+    EndTime: '2026-01-20T07:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
@@ -2932,7 +2932,7 @@ export const scheduleData = [
     Subject: 'Best Photography 2021',
     Location: 'London',
     StartTime: '2021-01-21T04:00:00.000Z',
-    EndTime: '2021-01-21T05:30:00.000Z',
+    EndTime: '2026-01-21T05:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
@@ -2940,7 +2940,7 @@ export const scheduleData = [
     Subject: 'Smarter Puppies',
     Location: 'Sweden',
     StartTime: '2021-01-08T04:30:00.000Z',
-    EndTime: '2021-01-08T06:00:00.000Z',
+    EndTime: '2026-01-08T06:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
@@ -2948,7 +2948,7 @@ export const scheduleData = [
     Subject: 'Myths of Andromeda Galaxy',
     Location: 'Space Center USA',
     StartTime: '2021-01-06T05:00:00.000Z',
-    EndTime: '2021-01-06T07:00:00.000Z',
+    EndTime: '2026-01-06T07:00:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
@@ -2956,7 +2956,7 @@ export const scheduleData = [
     Subject: 'Aliens vs Humans',
     Location: 'Research Center of USA',
     StartTime: '2021-01-05T04:30:00.000Z',
-    EndTime: '2021-01-05T06:00:00.000Z',
+    EndTime: '2026-01-05T06:00:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
@@ -2964,7 +2964,7 @@ export const scheduleData = [
     Subject: 'Facts of Humming Birds',
     Location: 'California',
     StartTime: '2021-01-19T04:00:00.000Z',
-    EndTime: '2021-01-19T05:30:00.000Z',
+    EndTime: '2026-01-19T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
@@ -2972,7 +2972,7 @@ export const scheduleData = [
     Subject: 'Sky Gazers',
     Location: 'Alaska',
     StartTime: '2021-01-22T05:30:00.000Z',
-    EndTime: '2021-01-22T07:30:00.000Z',
+    EndTime: '2026-01-22T07:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
@@ -2980,7 +2980,7 @@ export const scheduleData = [
     Subject: 'The Cycle of Seasons',
     Location: 'Research Center of USA',
     StartTime: '2021-01-11T00:00:00.000Z',
-    EndTime: '2021-01-11T02:00:00.000Z',
+    EndTime: '2026-01-11T02:00:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
@@ -2988,7 +2988,7 @@ export const scheduleData = [
     Subject: 'Space Galaxies and Planets',
     Location: 'Space Center USA',
     StartTime: '2021-01-11T11:30:00.000Z',
-    EndTime: '2021-01-11T13:00:00.000Z',
+    EndTime: '2026-01-11T13:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
@@ -2996,7 +2996,7 @@ export const scheduleData = [
     Subject: 'Lifecycle of Bumblebee',
     Location: 'San Fransisco',
     StartTime: '2021-01-14T00:30:00.000Z',
-    EndTime: '2021-01-14T02:00:00.000Z',
+    EndTime: '2026-01-14T02:00:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
@@ -3004,7 +3004,7 @@ export const scheduleData = [
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
     StartTime: '2021-01-14T10:30:00.000Z',
-    EndTime: '2021-01-14T12:30:00.000Z',
+    EndTime: '2026-01-14T12:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
@@ -3012,7 +3012,7 @@ export const scheduleData = [
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
     StartTime: '2021-01-10T08:30:00.000Z',
-    EndTime: '2021-01-10T10:30:00.000Z',
+    EndTime: '2026-01-10T10:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
@@ -3020,7 +3020,7 @@ export const scheduleData = [
     Subject: 'The Cycle of Seasons',
     Location: 'Research Center of USA',
     StartTime: '2021-01-12T09:00:00.000Z',
-    EndTime: '2021-01-12T10:30:00.000Z',
+    EndTime: '2026-01-12T10:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
@@ -3028,7 +3028,7 @@ export const scheduleData = [
     Subject: 'Sky Gazers',
     Location: 'Greenland',
     StartTime: '2021-01-15T09:00:00.000Z',
-    EndTime: '2021-01-15T10:30:00.000Z',
+    EndTime: '2026-01-15T10:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
@@ -3036,7 +3036,7 @@ export const scheduleData = [
     Subject: 'Facts of Humming Birds',
     Location: 'California',
     StartTime: '2021-01-16T07:00:00.000Z',
-    EndTime: '2021-01-16T09:00:00.000Z',
+    EndTime: '2026-01-16T09:00:00.000Z',
     CategoryColor: '#7fa900',
   },
 ];
